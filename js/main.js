@@ -1,16 +1,16 @@
 $(document).ready(function () {
 
-// About me show text on hover
-$('.easter').hover(function(){
-	$('#easter-egg-text').css({
-		'display':'block',
-	});
+// // About me show text on hover
+// $('.easter').hover(function(){
+// 	$('#easter-egg-text').css({
+// 		'display':'block',
+// 	});
 
-$('.easter').hover(function(){
-	$('#easter-egg-text').toggle()
-	});
+// $('.easter').hover(function(){
+// 	$('#easter-egg-text').toggle()
+// 	});
 
-});
+// });
 
 //Activate Modal
 	$('.js-modal-activate').on('click', function(e){
