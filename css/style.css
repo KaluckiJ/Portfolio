@@ -156,11 +156,6 @@ html {
 	font-weight: 100;
 }
 
-#resume-button {
-	position: relative;
-	z-index: -1;
-}
-
 #resume-button img:hover {
 	opacity:.8;
 	position: relative;
