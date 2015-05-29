@@ -1,0 +1,298 @@
+
+/* ==========================================================================
+  Main Attributes
+   ========================================================================== */
+
+html {
+	font-family: lato;
+}
+
+/* ==========================================================================
+  Home
+   ========================================================================== */
+.index-page, .resume-body{
+	background:url('../imgs/never-say-die.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+/* ==========================================================================
+ Front Page
+   ========================================================================== */
+
+#title-container {
+	position: relative;
+	top:200px;
+}
+
+#main-title-text {
+	 font-weight: 100;
+	 color:white;
+	 font-size:50px;
+	 text-align: center;
+}
+
+#sub-title-text {
+	 font-weight: 100;
+	 color:white;
+	 font-size: 25px;
+	 text-align: center;
+	 position: relative;
+	 bottom:40px;
+}
+
+/* ==========================================================================
+ Easter Egg Text
+   ========================================================================== */
+
+#easter-egg-text {
+	position: relative;
+	font-size: 25px;
+	color:white;
+	font-weight: 100;
+	display: none;
+}
+
+#easter-egg-text img {
+	position: absolute;
+	left:80%;
+	top:100px;
+}
+
+/* ==========================================================================
+  About
+   ========================================================================== */
+
+
+#about-content-1 {
+	font-size:18px;
+	line-height: 25px;
+	padding-top:50px;
+}
+
+#about-content-2 {
+	font-size:18px;
+	line-height: 25px;
+}
+
+#about-content-3 {
+	font-size:18px;
+	line-height: 25px;
+
+}
+
+#main-content {
+	font-size:20px;
+	line-height: 30px;
+	font-weight: 100;
+	width:750px;
+	padding-left: 30px;
+}
+
+#aboutFacts {
+	margin-top: 10px;
+	padding: 25px;
+	width:750px;
+	color:white;
+	font-weight: 200;
+}
+
+#aboutFacts h3 {
+	font-weight: 100;
+	font-size:25px;
+}
+
+
+/* ==========================================================================
+  Resume
+   ========================================================================== */
+
+.resume-body {
+	line-height: 25px;
+}
+
+#resume-content-1 {
+	padding-top: 50px;
+	width: 1000px;
+}
+
+#resume-content-2 {
+	width: 1000px;
+}
+
+#resume-content-3 {
+	width: 1000px;
+}
+
+.companyName {
+	background-color: #009CDB;
+	width: 1000px;
+	height:40px;
+	margin-top: 50px;
+}
+
+.companyName h2 {
+	line-height: 40px;
+	margin-left: 15px;
+	color:white;
+	font-weight: 300;
+}
+
+.contentWrapper {
+	width: 1000px;
+	background-color: rgba(0,0,0,.7);
+}
+
+#jobInfo {
+	margin-top: 10px;
+	padding: 25px;
+	color:white;
+	font-weight: 200;
+}
+
+#jobInfo h3 {
+	font-weight: 100;
+}
+
+/* ==========================================================================
+  Navigation
+   ========================================================================== */
+
+nav {
+	position: relative;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+	padding-right:50px;
+	font-size: 25px;
+	font-weight: 100;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color:white;
+	position: relative;
+
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  /*Browser Compatibility*/
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav ul ul {
+
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	top:100%;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li ul li {
+	float:left;
+	display: inline-block;
+	width:200px;
+	padding:10px;
+	text-align: left;
+	color:white;
+	background-color: rgba(0, 0, 0, .7);
+	font-size: 18px;
+}
+
+nav ul li:hover > ul
+{
+	display:block;
+	margin-bottom:15px;
+}
+
+
+/* ==========================================================================
+ Contact Modal
+   ========================================================================== */
+
+.modal-wrapper {
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.8);
+	top:0;
+	left:0;
+	display: none;
+}
+
+.modal ul li {
+	line-height: 25px;
+}
+
+.modal {
+	position: relative;
+	top:25%;
+	margin:0 auto;
+	width:500px;
+	border: 1px solid white;
+	padding:20px;
+	border-radius: 5px;
+	overflow: auto;
+	background-color: black;
+	color:white;
+}
+
+
+.modal-title {
+	clear:both;
+	color: #009CDB;
+	font-size: 50px;
+	font-weight:100;
+}
+
+/*Added in Jquery*/
+
+.modal-on {
+	overflow: hidden;
+}
+
+.btn {
+	float:right;
+	padding:9px 18px;
+	border:solid 1px white;
+	background-color: #009CDB;
+	color:white;
+}
+
+.btn a {
+	color:white;
+}
+
+.btn-close:hover {
+	opacity:.6;
+}
+
+.btn-close {
+	text-decoration: none;
+	font-weight: 100;
+}
